@@ -1,0 +1,37 @@
+code-init:
+  description: "Files created when initializing a project with /talos-init"
+  files:
+    - template: plan.md.tmpl
+      destination: .talos/plan.md
+    - template: bugs.md.tmpl
+      destination: .talos/bugs.md
+    - template: decisions.md.tmpl
+      destination: .talos/decisions.md
+    - template: risks.md.tmpl
+      destination: .talos/risks.md
+    - template: index.md.tmpl
+      destination: .talos/index.md
+
+daily-note:
+  description: "Template for new daily journal entries"
+  files:
+    - template: daily-note.md.tmpl
+      destination: "journal/{{YYYY}}/{{MM}}/{{YYYY-MM-DD}}.md"
+
+contact:
+  description: "Template for new contact files"
+  files:
+    - template: contact.md.tmpl
+      destination: "{{FOLDER}}/{{NAME}}.md"
+
+application:
+  description: "Template for job application trackers"
+  files:
+    - template: application.md.tmpl
+      destination: "{{FOLDER}}/{{COMPANY}}-{{ROLE}}.md"
+
+course:
+  description: "Template for new course setup"
+  files:
+    - template: course.md.tmpl
+      destination: "{{FOLDER}}/{{COURSE}}/index.md"

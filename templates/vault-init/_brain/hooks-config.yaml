@@ -1,0 +1,16 @@
+# Hook behavior preferences — edit to customize passive capture
+
+passive_capture:
+  enabled: true
+  log_file_reads: true
+  log_searches: true
+
+session_start:
+  load_profile: true
+  load_priorities: true
+  load_pinned: true
+  load_crash_buffer: true
+
+session_end:
+  auto_commit: true
+  auto_update: true

@@ -1,0 +1,14 @@
+# Skill behavior preferences — edit to customize plugin skill behavior
+
+talos-storm:
+  min_ideas: 10
+  scoring_dimensions: [feasibility, impact, novelty, effort]
+
+talos-reflect:
+  weekly_day: sunday
+  compress_after_days: 30
+
+talos-remember:
+  default_importance: 3
+  auto_link: true
+  auto_embed: true

@@ -1,0 +1,33 @@
+{
+  "name": "talos-core",
+  "version": "1.0.0",
+  "description": "TALOS — The Automaton for Local Operations and Search. A persistent second brain service for Obsidian vaults.",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "talos": "./bin/talos"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@tobilu/qmd": "^2.0.1",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "glob": "^11.0.1",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
+    "simple-git": "^3.28.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  },
+  "license": "MIT"
+}

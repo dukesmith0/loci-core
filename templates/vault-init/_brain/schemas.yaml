@@ -1,0 +1,19 @@
+fact:
+  required: [type, topic, confidence]
+  optional: [source, last_verified, importance]
+
+episode:
+  required: [type, date]
+  optional: [people, context, importance]
+
+preference:
+  required: [type, domain, rule]
+  optional: [strength, importance]
+
+reference:
+  required: [type, title, source]
+  optional: [topic, confidence, importance]
+
+contact:
+  required: [type, name]
+  optional: [company, role, met, followup, importance]
